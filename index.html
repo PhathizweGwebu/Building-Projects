@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <!-- a div container to allow for styling later. -->
+    <div class="container">
+        <form method="post">
+            <fieldset>
+                <legend>Add User</legend>
+                <!-- Personal information of user. -->
+                <label for="first-name">First name</label>
+                <input id="first-name" type="text"><br>
+
+                <label for="last-name">Last name</label>
+                <input id="last-name" type="text"><br>
+
+                <label for="email">Email address</label>
+                <input id="email" type="email"><br>
+
+                <label for="options">Capacity</label>
+
+                <select id="option">
+                  <option value="Student">Student</option>
+                  <option value="Instructor">Instructor</option>
+                  <option value="Guest">Guest</option>
+                </select> <br>
+
+                <!-- A user makes a choice on the given options -->
+
+                <p>Choose your favourite programming language</p>
+
+                <label for="html-lang">HTML</label>
+                <input id="html-lang" type="radio" value="html" name="favourite"><br>
+
+                <label for="css-lang">CSS</label>
+                <input id="css-lang" type="radio" value="css" name="favourite"><br>
+
+                <label for="javascript-lang">JavaScript</label>
+                <input id="javascript-lang" type="radio" value="JavaScript3" name="favourite"><br>
+
+                <!-- Comment section -->
+
+                <label for="text-area">Comments</label>
+
+                <textarea id="text-area" name="Comments" rows="4" cols="50">
+
+                </textarea><br>
+
+                <label for="date-currently">Current date</label>
+                <input type="date" id="date-currently" name="current-date"> <br>
+
+                <label for="sign-up">Sign up for the newsletter</label>
+                <input type="checkbox" id="sign-up" name="signup" value="signed-up">
+
+                <label for="terms">Agree to terms and conditions</label>
+                <input type="checkbox" id="terms" name="signup" value="agreed"><br>
+
+                <!-- <label for="submit-button">Submit</label> -->
+                <input type="button" id="submit-button" value="Submit">
+                
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
